@@ -10,6 +10,7 @@ body{
     background-color: rgb(177, 149, 121);
     color: white;
     font-size: 20px;
+    flex-shrink: 0;
 }
 
 #buttons{
