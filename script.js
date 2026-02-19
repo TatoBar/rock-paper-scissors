@@ -10,21 +10,7 @@ getComputerChoise = () => {
   }
 };
 
-getHumanChoise = () => {
-  let input = String(
-    prompt(`Please enter "Rock, "Paper" or "Scissors`),
-  ).toLowerCase();
-  while (
-    (String(input) != 'rock') &
-    (String(input) != 'paper') &
-    (String(input) != 'scissors')
-  ) {
-    input = prompt(
-      'You did not enter the correct word. \nPlease enter "Rock, "Paper" or "Scissors',
-    );
-  }
-  return input;
-};
+
 playRound = (humanChoise, computerChoise) => {
   if (computerChoise == humanChoise) {
     res.textContent = (`its a draw, you both selected ${humanChoise}`);
@@ -49,6 +35,7 @@ checkResult = (result) => {
       humanScore += 1;
     }
     score.textContent = 'Computer Score: ' + computerScore + '    Human Score: ' + humanScore;
+    
     if(humanScore === 5 || computerScore === 5){
       buttons.appendChild(reset);
       buttons.removeChild(rock);
