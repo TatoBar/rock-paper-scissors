@@ -1,0 +1,37 @@
+body{
+    font-family: 'Roboto', Times, serif;
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+
+}
+
+#buttons{
+    font-family: 'Roboto', Times, serif;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    max-width: 500px;
+}
+
+#score{
+    width: 300px;
+    height: 25px;
+    max-width: 500px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+}
+#result{
+    width: 300px;
+    height: 25px;
+    max-width: 500px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+}
