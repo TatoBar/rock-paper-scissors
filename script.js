@@ -11,6 +11,7 @@ getComputerChoise = () => {
 };
 
 
+
 playRound = (humanChoise, computerChoise) => {
   if (computerChoise == humanChoise) {
     res.textContent = (`its a draw, you both selected ${humanChoise}`);
